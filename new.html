@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <script type="text/javascript">
+        function show() {
+            var a = confirm("Are you sure？");
+
+            if (a == true) {
+                alert("OK!");//添加其他功能
+            }
+        }
+    </script>
+</head>
+
+<body>
+<form id="downlaod" action="">
+    可下载：<input type="radio" name="download" id="" value="yes"/><br/>
+    不可下载：<input type="radio" name="download" id="" value="no" onclick="show()"/><br/>
+</form>
+</body>
+</html>
