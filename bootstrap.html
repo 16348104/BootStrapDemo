@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scale=no">
     <title>项目实战</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -21,19 +21,50 @@
             </button>
         </div>
         <div id="navbar-collapse" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav navbar-right" style="margin-top: 0px">
+            <ul class="nav navbar-nav navbar-right">
                 <li class="active"><a href="#"> <span class="glyphicon glyphicon-home"><span/>首页</a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-list"></span>咨询</a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-fire"><span/>案例</a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-question -sign"><span/>关于</a></li>
             </ul>
         </div>
-
     </div>
 </nav>
+<div id="mycarousel" class="carousel slide">
+    <ol class="carousel-indicators">
+        <li class="active" data-target="#mycarousel" data-slide-to="0"></li>
+        <li data-target="#mycarousel" data-slide-to="1"></li>
+        <li data-target="#mycarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active" style="background: #223240">
+            <img src="" alt="">
+        </div>
+        <div class="item" style="background: #F5E4DC">
+            <img src="" alt="">
+        </div>
+        <div class="item" style="background: #DE2A2D">
+            <img src="" alt="">
+        </div>
+    </div>
+    <a href="#mycarousel" data-slide="prev" class="carousel-control left">&lsaquo;</a>
+    <a href="#mycarousel" data-slide="next" class="carousel-control right">&rsaquo;</a>
+</div>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/jquery-3.0.0.min.js"></script>
 <script type="text/javascript">
+    $(function () {
+        $('#mycarousel').carousel({
+            interval: 4000;
+    })
+        ;
+        $('.carousel-control').css('line-height', $('.carousel-inner img').hegiht() + 'px');
+        var $height = $('.carousel-inner img').eq(0).height() ||
+                $('.carousel-inner img').eq(1).height() ||
+                $('.carousel-inner img').eq(2).height();
+        $('.carousel-control').css('line-height', $height + 'px');
+
+    });
 
 </script>
 </body>
