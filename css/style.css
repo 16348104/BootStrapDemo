@@ -1,16 +1,89 @@
 @charset "utf-8";
-.logo{
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif "Microsoft Yahei UI" "Microsoft Yahei" 'Sinhala MN';
+}
+.logo {
     padding: 0;
 }
+
 #mycarousel {
     margin: 50px 0 0 0;
 }
-#navbar-collapse ul{
+
+#navbar-collapse ul {
     margin-top: 0px;
 }
-.carousel-inner img{
+
+.carousel-inner img {
     margin: 0 auto;
 }
-.carousel-control{
-    font-size: 100px;
+
+/*.carousel-control{*/
+/*font-size: 100px;*/
+/*}*/
+.tab-h2 {
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #0059b2;
+
+}
+
+.tab-p {
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #999;
+    margin: 20px 0px 40px 0px;
+}
+
+.tab1 {
+    margin: 30px 0;
+    color: #666;
+
+}
+.tab1 .text-muted {
+    color: #999;
+    text-decoration: line-through;
+
+}
+.tab1 .media-heading{
+    margin: 5px 0 25px 0;
+
+}
+.tab1 .col{
+    padding: 15px;
+
+}
+/*没有小于768px,bootstrap以移动端优先设计*/
+
+
+/*小屏幕,平板(大于等于768px)*/
+@media (min-width:768px) {
+
+    .tab-h2{
+        font-size: 26px;
+    }
+    .tab-p{
+        font-size: 16px;
+    }
+}
+/*中等屏幕桌面(大于等于992px)*/
+@media (min-width:992px) {
+
+    .tab-h2{
+        font-size: 28px;
+    }
+    .tab-p{
+        font-size: 17px;
+    }
+}
+/*超大屏幕(大于等于1200px)*/
+@media (min-width: 1200px) {
+    .tab-h2{
+        font-size: 30px;
+    }
+    .tab-p{
+        font-size: 18px;
+    }
 }
