@@ -1,6 +1,7 @@
 @charset "utf-8";
 body{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif "Microsoft Yahei UI" "Microsoft Yahei" 'Sinhala MN';
+    color: #666;
 }
 .logo {
     padding: 0;
@@ -13,7 +14,12 @@ body{
 #navbar-collapse ul {
     margin-top: 0px;
 }
-
+#footer {
+    padding: 20px;
+    background: #eee;
+    border-top: 1px solid #cccccc;
+    text-align: center;
+}
 .carousel-inner img {
     margin: 0 auto;
 }
