@@ -27,6 +27,24 @@ body{
 /*.carousel-control{*/
 /*font-size: 100px;*/
 /*}*/
+.tab2{
+    background-color: #eee;
+    text-align: center;
+    padding: 60px 20px;
+
+}
+.tab2 img{
+    width: 40%;
+    height: 40%;
+}
+.tab3{
+    text-align: center;
+    padding: 60px 0px;
+}
+.tab3 img{
+    width: 65%;
+    height: 65%;
+}
 .tab-h2 {
     font-size: 20px;
     text-align: center;
@@ -61,6 +79,12 @@ body{
     padding: 15px;
 
 }
+.text h3{
+    font-size: 20px;
+}
+.text p{
+    font-size: 14px;
+}
 /*没有小于768px,bootstrap以移动端优先设计*/
 
 
@@ -73,6 +97,19 @@ body{
     .tab-p{
         font-size: 16px;
     }
+    .text h3{
+        font-size: 22px;
+    }
+    .text p{
+        font-size: 15px;
+    }
+    .tab2-text{
+        float: left;
+    }
+    .tab2-img
+    {
+        float: right;
+    }
 }
 /*中等屏幕桌面(大于等于992px)*/
 @media (min-width:992px) {
@@ -83,6 +120,12 @@ body{
     .tab-p{
         font-size: 17px;
     }
+    .text h3{
+        font-size: 24px;
+    }
+    .text p{
+        font-size: 16px;
+    }
 }
 /*超大屏幕(大于等于1200px)*/
 @media (min-width: 1200px) {
@@ -90,6 +133,12 @@ body{
         font-size: 30px;
     }
     .tab-p{
+        font-size: 18px;
+    }
+    .text h3{
+        font-size: 26px;
+    }
+    .text p{
         font-size: 18px;
     }
 }
