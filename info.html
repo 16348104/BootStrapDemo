@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scale=no">
     <title>项目实战</title>
     <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -118,7 +117,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-ms-6 text tab2-text">
-                <img src="" alt="" class="center-block img-responsive">
+                <img src="" alt="" class="center-block img-responsive" >
             </div>
             <div class="col-md-6 col-ms-6 tab2-img">
                 <h3>强大的学习体系</h3>
@@ -154,28 +153,20 @@
 </footer>
 <!--<script src="js/bootstrap.min.js"></script>-->
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
-        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
-        crossorigin="anonymous"></script>
 <script src="js/jquery-3.0.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <script type="text/javascript">
     $(function () {
         $('#mycarousel').carousel({
             interval: 4000
-        });
-    });
-    $(window).load(function () {
-        $('.text').eq(0).css('margin-top', ($('.auto').eq(0).height() - $('.text').eq(0).height()) / 2 + 'px');
-    });
-    $(window).resize(function () {
-        $('.text').eq(0).css('margin-top', ($('.auto').eq(0).height() - $('.text').eq(0).height()) / 2 + 'px');
-    });
-    $(window).load(function () {
-        $('.text').eq(1).css('margin-top', ($('.auto').eq(1).height() - $('.text').eq(1).height()) / 2 + 'px');
-    });
-    $(window).resize(function () {
-        $('.text').eq(1).css('margin-top', ($('.auto').eq(1).height() - $('.text').eq(1).height()) / 2 + 'px');
-    })
+        })
+
+    //        $('.carousel-control').css('line-height', $('.carousel-inner img').hegiht() + 'px');
+    //        var $height = $('.carousel-inner img').eq(0).height() ||
+    //                $('.carousel-inner img').eq(1).height() ||
+    //                $('.carousel-inner img').eq(2).height();
+    //        $('.carousel-control').css('line-height', $height + 'px');
+
 
 </script>
 </body>
