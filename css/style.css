@@ -52,7 +52,6 @@ body{
     color: #0059b2;
 
 }
-
 .tab-p {
     font-size: 15px;
     text-align: center;
@@ -84,6 +83,10 @@ body{
 }
 .text p{
     font-size: 14px;
+}
+.jumbotorn{
+    background-color: rgba(92, 92, 92, 0.61);
+    margin: 50px 0 0 0;
 }
 /*没有小于768px,bootstrap以移动端优先设计*/
 
