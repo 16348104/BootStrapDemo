@@ -57,8 +57,6 @@
         <span class="glyphicon glyphicon-chevron-right"></span>
     </a>
 </div>
-
-
 <div class="tab1">
     <div class="container">
         <h2 class="tab-h2">为什么选择瓢城企业培训</h2>
@@ -130,8 +128,6 @@
         </div>
     </div>
 </div>
-
-
 <div class="tab3">
     <div class="container">
         <div class="row">
@@ -163,16 +159,7 @@
         interval : 4000,
     });
 
-    // //设置垂直居中
-    // $('.carousel-control').css('line-height', $('.carousel-inner img').height() + 'px');
-    // $(window).resize(function () {
-    // 	var $height = $('.carousel-inner img').eq(0).height() ||
-    // 				  $('.carousel-inner img').eq(1).height() ||
-    // 				  $('.carousel-inner img').eq(2).height();
-    // 	$('.carousel-control').css('line-height', $height + 'px');
-    // });
-
-    //设置文字垂直居中，谷歌浏览器加载图片的顺序问题，导致高度无法获取
+   //设置文字垂直居中，谷歌浏览器加载图片的顺序问题，导致高度无法获取
     $(window).load(function () {
         $('.text').eq(0).css('margin-top', ($('.auto').eq(0).height() - $('.text').eq(0).height()) / 2 + 'px');
     });
