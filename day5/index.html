@@ -6,6 +6,7 @@
     <title>栅格系统</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-theme.css"/>
+    <link rel="stylesheet" href="container.css"/>
     <style>
         .a{
             height: 100px;
@@ -30,6 +31,22 @@
     <div class="row">
         <div class="col-md-8 a">1-8</div>
         <div class="col-md-4 a">9-12</div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 a">8</div>
+        <div class="col-md-3 col-md-offset-1 a">3</div>
+    </div>
+    <div class="row">
+        <div class="col-md-9 a" style="padding: 0px">
+                <div class="col-md-4 a">4</div>
+                <div class="col-md-4 a">4</div>
+                <div class="col-md-4 a">4</div>
+        </div>
+        <div class="col-md-3 a">3</div>
+    </div>
+    <div class="row">
+        <div class="col-md-9 col-md-push-3 a">9</div>
+        <div class="col-md-3 col-md-pull-9 a">3</div>
     </div>
 </div>
 <script src="../js/bootstrap.js"></script>
