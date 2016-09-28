@@ -1,7 +1,9 @@
 .idea
 .gradle
-gradle
 out
 *.iml
 gradlew
 gradlew.bat
+local.properties
+.DS_Store
+build
