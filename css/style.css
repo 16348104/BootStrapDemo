@@ -237,7 +237,6 @@ body {
 		font-size: 15px;
 	}
 }
-
 /* 大屏幕（大桌面显示器，大于等于1200px） */
 @media (min-width: 1200px) {
 	.tab-h2 {
