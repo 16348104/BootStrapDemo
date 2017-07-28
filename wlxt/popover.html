@@ -2,33 +2,27 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="../css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="../css/bootstrap-theme.min.css"/>
+    <!--<link rel="stylesheet" href="../css/bootstrap-theme.min.css"/>-->
     <script src="../js/jquery-1.11.2.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-    <meta charset="UTF-8">
-    <title>弹出框</title>
     <script type="text/javascript">
         $(document).ready(function () {
             $('#element').popover();
-         /*   $('#element').popover({
-                title: "云笔记服务停止",
-                content: "各位老师、同学：由于新版网络学堂云笔记服务器搬迁，将于2017年8月 日(星期 )暂停新版网络学堂云笔记服务。请各位老师、同学尽快下载并保存云笔记中的附件。由此给您带来不便,敬请谅解！",
-                placement: "bottom"
-
-            });*/
-
+            $("#example").popover();
         });
     </script>
-
+    <meta charset="UTF-8">
+    <title>弹出框</title>
 </head>
-
 <body>
 <div>
-<a id="element"data-toggle="popover"
-   data-original-title="云笔记服务停止"
-   data-placement="bottom"
-   data-content="各位老师、同学：由于新版网络学堂云笔记服务器搬迁，将于2017年8月 日(星期 )暂停新版网络学堂云笔记服务。请各位老师、同学尽快下载并保存云笔记中的附件。由此给您带来不便,敬请谅解！"
-   class="btn btn-danger" href="#">单击反转弹出框</a>
+    <a id="element" data-toggle="popover"
+       data-original-title="关于云笔记服务停止的通知："
+       data-placement="bottom"
+       data-content="各位老师、同学：由于新版网络学堂云笔记服务器搬迁，将于2017年8月 日(星期 )暂停新版网络学堂云笔记服务。请各位老师、同学尽快下载并保存云笔记中的附件。由此给您带来不便,敬请谅解！"
+       class="btn btn-danger" href="#">云笔记</a>
+    <a href="#" id="example" class="btn btn-success" rel="popover" data-content="为我的网站创建一个提示框如此简单！"
+       data-original-title="Bootstrap弹出框">个人网盘</a>
 </div>
 </body>
 </html>
