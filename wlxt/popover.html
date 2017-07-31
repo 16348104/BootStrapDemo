@@ -11,10 +11,25 @@
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="../js/bootstrap-tooltip-2.0.4.js"></script>
     <script src="../js/bootstrap-popover-2.0.4.js"></script>
-    <script type="text/javascript">
+   <!-- <script type="text/javascript">
         $(document).ready(function () {
             $('[data-toggle=popover]').popover();
 //            $("#example").popover();
+        });
+    </script>-->
+
+    <script>
+        jQuery(document).ready(function($){
+            $('[data-toggle="popover"]').popover({
+                trigger: 'manual',
+                animate: false,
+                html: true,
+                template: '<div class="popover" onmouseover="$(this).mouseleave(function() {$(this).hide(); });"><div class="arrow"></div><div class="popover-inner"><h3 class="popover-title"></h3><div class="popover-content"><p></p></div></div></div>'
+            }).click(function(e) {
+                e.preventDefault() ;
+            }).mouseenter(function(e) {
+                $(this).popover('show');
+            })
         });
     </script>
     <meta charset="UTF-8">
