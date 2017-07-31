@@ -2,32 +2,33 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="../css/bootstrap.min.css"/>
-    <!--<link rel="stylesheet" href="../css/bootstrap-theme.min.css"/>-->
-    <!--<script src="../js/bootstrap.min.js"></script>-->
+    <link rel="stylesheet" href="../css/bootstrap-theme.min.css"/>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
     <!--<script src="../js/jquery-1.11.2.min.js"></script>-->
-    <!--<script src="../js/jquery-1.10.0.min.js"></script>-->
+    <script src="../js/jquery-1.10.0.min.js"></script>
     <!--<script src="../js/jquery-1.9.0.min.js"></script>-->
     <!--<script src="../js/jquery-1.7.2.min.js"></script>-->
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="../js/bootstrap-tooltip-2.0.4.js"></script>
-    <script src="../js/bootstrap-popover-2.0.4.js"></script>
-   <!-- <script type="text/javascript">
-        $(document).ready(function () {
-            $('[data-toggle=popover]').popover();
-//            $("#example").popover();
-        });
-    </script>-->
+    <script src="../js/bootstrap.min.js"></script> //Bootstrap's JavaScript requires jQuery version 1.9.1 or higher
+
+    <!--<script src="../js/bootstrap-tooltip-2.0.4.js"></script>-->
+    <!--<script src="../js/bootstrap-popover-2.0.4.js"></script>-->
+     <!--<script type="text/javascript">
+         $(document).ready(function () {
+             $('[data-toggle=popover]').popover();
+ //            $("#example").popover();
+         });
+     </script>-->
 
     <script>
-        jQuery(document).ready(function($){
+        jQuery(document).ready(function ($) {
             $('[data-toggle="popover"]').popover({
                 trigger: 'manual',
                 animate: false,
                 html: true,
                 template: '<div class="popover" onmouseover="$(this).mouseleave(function() {$(this).hide(); });"><div class="arrow"></div><div class="popover-inner"><h3 class="popover-title"></h3><div class="popover-content"><p></p></div></div></div>'
-            }).click(function(e) {
-                e.preventDefault() ;
-            }).mouseenter(function(e) {
+            }).click(function (e) {
+                e.preventDefault();
+            }).mouseenter(function (e) {
                 $(this).popover('show');
             })
         });
@@ -36,18 +37,23 @@
     <title>弹出框</title>
 </head>
 <body>
-<div class="container">
-    <a id="element"
-       data-toggle="popover"
-       data-placement="bottom"
-       data-original-title="关于云笔记服务停止的通知："
-       data-content="各位老师、同学：由于新版网络学堂云笔记服务器搬迁，将于2017年8月 日(星期 )暂停新版网络学堂云笔记服务。请各位老师、同学尽快下载并保存云笔记中的附件。由此给您带来不便,敬请谅解！"
-       class="btn btn-danger" href="#">云笔记</a>
-    <a href="#" id="example" class="btn btn-success"
-       data-toggle="popover"
-       data-placement="bottom"
-       data-original-title="关于网盘服务停止的通知"
-       data-content="各位老师、同学：由于新版网络学堂网盘服务器搬迁,将于2017年8月 日(星期 )暂停新版网络学堂个人网盘服务。请各位老师、同学尽快下载并保存网盘中的文件。由此给您带来不便,敬请谅解！">个人网盘</a>
+<div class="container dropdown open">
+    <ul class="dropdown-menu">
+        <li><a id="element"
+               data-toggle="popover"
+               data-placement="left"
+               data-original-title="关于云笔记服务停止的通知："
+               data-content="各位老师、同学：由于新版网络学堂云笔记服务器搬迁，将于2017年8月 日(星期 )暂停新版网络学堂云笔记服务。请各位老师、同学尽快下载并保存云笔记中的附件。由此给您带来不便,敬请谅解！"
+               class="btn btn-danger" href="#">云笔记</a></li>
+        <li class="">
+            <a href="#" id="example" class="btn btn-success"
+               data-toggle="popover"
+               data-placement="bottom"
+               data-original-title="关于网盘服务停止的通知"
+               data-content="各位老师、同学：由于新版网络学堂网盘服务器搬迁,将于2017年8月 日(星期 )暂停新版网络学堂个人网盘服务。请各位老师、同学尽快下载并保存网盘中的文件。由此给您带来不便,敬请谅解！">个人网盘
+            </a>
+        </li>
+    </ul>
 </div>
 </body>
 </html>
