@@ -26,10 +26,10 @@
                 trigger: 'manual',
                 animate: false,
                 html: true,
-                template: '<div class="popover" onmouseover="$(this).mouseleave(function() {$(this).hide(); });"><div class="arrow"></div><div class="popover-inner"><h5 class="popover-title"></h5><div class="popover-content"><p></p></div></div></div>'
+                template: '<div class="popover" onmouseover="$(this).mouseleave(function() {$(this).hide(); });"><div class="arrow"></div><div class="popover-inner"><h3 class="popover-title"></h3><div class="popover-content"><p></p></div></div></div>'
             }).click(function (e) {
                 e.preventDefault();
-            }).mouseenter(function (e) {
+            }).mouseenter(function () {
                 $(this).popover('show');
             })
         });
