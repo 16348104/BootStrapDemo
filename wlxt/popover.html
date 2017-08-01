@@ -13,12 +13,12 @@
 
     <script src="../js/bootstrap-tooltip-2.0.4.js"></script>
     <script src="../js/bootstrap-popover-2.0.4.js"></script>
-     <!--<script type="text/javascript">
-         $(document).ready(function () {
-             $('[data-toggle=popover]').popover();
- //            $("#example").popover();
-         });
-     </script>-->
+    <!--<script type="text/javascript">
+        $(document).ready(function () {
+            $('[data-toggle=popover]').popover();
+//            $("#example").popover();
+        });
+    </script>-->
 
     <script>
         jQuery(document).ready(function ($) {
@@ -38,15 +38,20 @@
     <title>弹出框</title>
 </head>
 <body>
-<div class="container dropdown open">
+<!--<div id="box1">
+    <div style="background-color: #0e90d2;float: left;height: 100px;width: 100px">
+        123456
+    </div>
+</div>-->
+<div class="container-fluid dropdown open">
     <ul class="dropdown-menu">
         <li><a id="element"
                data-toggle="popover"
-               data-placement="left"
+               data-placement="right"
                data-original-title="关于云笔记服务停止的通知："
                data-content="各位老师、同学：由于新版网络学堂云笔记服务器搬迁，将于2017年8月 日(星期 )暂停新版网络学堂云笔记服务。请各位老师、同学尽快下载云笔记中的附件。由此给您带来不便,敬请谅解！"
                class="btn btn-danger" href="#">云笔记</a></li>
-        <li class="">
+        <li>
             <a href="#" id="example" class="btn btn-success"
                data-toggle="popover"
                data-placement="bottom"
@@ -56,5 +61,10 @@
         </li>
     </ul>
 </div>
+<!--<div id="box2">
+    <div style="background-color: #8a6d3b;float: left;height: 100px;width: 100px">
+        7890
+    </div>
+</div>-->
 </body>
 </html>
