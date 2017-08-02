@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script type="text/javascript">
+        function closeit() {
+            window.opener = null;
+            window.open('', '_self');
+            window.close();
+        }
+    </script>
     <!-- <link rel="stylesheet" href="../css/bootstrap.min.css"/>
      <link rel="stylesheet" href="../css/bootstrap-theme.min.css"/>-->
     <!-- Latest compiled and minified CSS -->
@@ -36,7 +43,6 @@
     </style>
 
 </head>
-</head>
 <body>
 <!--<input type="button" onclick="show_alert()" value="云笔记"/>-->
 <div class="container alert alert-warning fade in note fixed" role="alert">
@@ -47,7 +53,7 @@
     <p>各位老师、同学：</p>
     <p>由于新版网络学堂云笔记服务器搬迁，将于2017年8月 日(星期 )暂停新版网络学堂云笔记服务。请各位老师、同学尽快下载云笔记中的附件。</p>
     <p>由此给您带来不便,敬请谅解！</p><br>
-    <a href="#" class="btn btn-danger" data-dismiss="alert">关闭</a>
+    <a href="javascript:self.close();" class="btn btn-danger">关闭页面</a>
 </div>
 </body>
 <!--<script src="../js/jquery-1.11.2.min.js"></script>
