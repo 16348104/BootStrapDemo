@@ -19,7 +19,11 @@
 //            $("#example").popover();
         });
     </script>-->
-
+    <script type="text/javascript">
+        function openwin(){
+            window.open("note1.html","resizable=no,location=no,status=no");
+        }
+    </script>
     <script>
         jQuery(document).ready(function ($) {
             $('[data-toggle="popover"]').popover({
@@ -37,7 +41,7 @@
     <meta charset="UTF-8">
     <title>弹出框</title>
 </head>
-<body>
+<body onload="openwin()">
 <!--<div id="box1">
     <div style="background-color: #0e90d2;float: left;height: 100px;width: 100px">
         123456
@@ -49,14 +53,14 @@
                data-toggle="popover"
                data-placement="right"
                data-original-title="关于云笔记服务停止的通知："
-               data-content="各位老师、同学：由于新版网络学堂云笔记服务器搬迁，将于2017年8月 日(星期 )暂停新版网络学堂云笔记服务。请各位老师、同学尽快下载云笔记中的附件。由此给您带来不便,敬请谅解！"
+               data-content="各位老师、同学：由于新版网络学堂云笔记服务器搬迁，将于2017年9月30日(星期六)停止新版网络学堂云笔记服务。请您尽快下载云笔记中的附件。由此给您带来不便,敬请谅解！"
                class="btn btn-danger" href="#">云笔记</a></li>
         <li>
             <a href="#" id="example" class="btn btn-success"
                data-toggle="popover"
                data-placement="bottom"
                data-original-title="关于网盘服务停止的通知"
-               data-content="各位老师、同学：由于新版网络学堂网盘服务器搬迁,将于2017年8月 日(星期 )暂停新版网络学堂个人网盘服务。请各位老师、同学尽快下载网盘中的文件。由此给您带来不便,敬请谅解！">个人网盘
+               data-content="各位老师、同学：由于新版网络学堂网盘服务器搬迁,将于2017年8月 日(星期 )停止新版网络学堂网盘服务。请您尽快下载网盘中的文件。由此给您带来不便,敬请谅解！">个人网盘
             </a>
         </li>
     </ul>

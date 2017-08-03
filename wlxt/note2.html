@@ -19,33 +19,47 @@
     <title>个人网盘</title>
     <style type="text/css">
         .note {
-            border-radius: 4px;
             display: inline-block;
-        }
-
-        .fixed {
-            width: 450px;
-            height: auto;
             position: fixed;
+            top: 10%;
+            left: 50%;
+            z-index: 1050;
+            width: 560px;
+            height: 290px;
             top: 16%;
             left: 0;
             right: 0;
             margin: 0 auto;
+            border: 1px solid #999;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            border-radius: 6px;
+            outline: none;
+            -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+            -webkit-background-clip: padding-box;
+            -moz-background-clip: padding-box;
+            background-clip: padding-box;
         }
     </style>
 </head>
-</head>
 <body>
-<!--<input type="button" onclick="show_alert()" value="云笔记"/>-->
-<div class="alert alert-warning note fixed" role="alert">
-    <!--<button type="button" class="close" data-dismiss="alert">&times;</button>-->
-    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-    <p class="text-center h4">关于新版网络学堂个人网盘服务停止的通知</p>
-    <hr>
-    <p>各位老师、同学：</p>
-    <p>由于新版网络学堂网盘服务器搬迁,将于2017年8月 日(星期 )暂停新版网络学堂个人网盘服务。请各位老师、同学尽快下载网盘中的文件。</p>
-    <p>由此给您带来不便,敬请谅解！</p><br>
-    <a href="#" class="btn btn-danger" data-dismiss="alert">关闭</a>
+
+<div class="container alert alert-warning modal fade in note" role="alert">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <p class="text-center h4">关于新版网络学堂个人网盘服务停止的通知</p>
+    </div>
+    <div class="modal-body">
+        <p>各位老师、同学：</p>
+        <p>由于新版网络学堂的网盘服务器搬迁,将于2017年9月30日(星期六)停止新版网络学堂的网盘服务。<b>请您尽快下载个人网盘中的文件。</b></p>
+        <p>由此给您带来不便,敬请谅解！</p>
+    </div>
+    <div class="modal-footer">
+        <a href="javascript:self.close();" data-dismiss="alert" class="btn btn-danger">确定</a>
+    </div>
 </div>
 </body>
 <!--<script src="../js/jquery-1.11.2.min.js"></script>
